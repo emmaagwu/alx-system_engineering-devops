@@ -1,2 +1,3 @@
 #!/bin/bash
-find . -mindepth | -type d -not -name '.' -not -name '..' | wc -l
+shopt -s dotglob nullglob; echo $(($(find . -type d | wc -l) - 2))
+
