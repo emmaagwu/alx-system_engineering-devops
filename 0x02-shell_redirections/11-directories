@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d ! -path . -print | wc -l
+find . -mindepth | -type d -not -name '.' -not -name '..' | wc -l
