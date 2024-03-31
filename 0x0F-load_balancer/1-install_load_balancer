@@ -50,8 +50,8 @@ frontend def-frontend
 
 backend def-backend
 	balance roundrobin
-	server 322536-web-01 52.91.131.105:80 check
-	server 322536-web-02 52.91.146.189:80 check
+	server 501203-web-01 34.232.53.28:80 check
+	server 501203-web-02 54.237.210.237:80 check
 "
 
 echo "$configuration" > /etc/haproxy/haproxy.cfg
